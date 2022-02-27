@@ -11,7 +11,7 @@
   "scripts": {
     "start": "node dist/main.js",
     "build": "npm install -g typescript && tsc && echo Bot complilado correctamente",
-    "dev": "ts-node-dev --respawn --transpile-only --poll main.ts",
+    "dev": "ts-node-dev --respawn --transpile-only --poll index.ts",
     "test": "eslint ."
   },
   "repository": {
