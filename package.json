@@ -1,7 +1,7 @@
 {
   "name": "appeals",
   "version": "0.0.1",
-  "description": "Appeals para el servidor de LA CABRA",
+  "description": "Appeals para el servidor de TutoDiscord",
   "main": "dist/main.js",
   "engines": {
     "node": "16.9.x",
