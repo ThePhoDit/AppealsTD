@@ -346,7 +346,7 @@ export async function sendAppealEmbed(user: any, _appeal: any) {
     let endButton = new MessageButton()
         .setStyle("PRIMARY")
         .setLabel("Terminar votación")
-        .setEmoji(":hourglass:")
+        .setEmoji("⌛")
         .setCustomId(`btn-end-${appeal.AppealID}`)
     try {
         //@ts-ignore
