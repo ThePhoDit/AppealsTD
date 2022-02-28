@@ -44,7 +44,11 @@ a.invite:link {
 	color: #ffed5d
 }
 
-a.invite:link {
+a.invite:visited {
+	color: #ffed5d
+}
+
+a.invite:active {
 	color: #ffed5d
 }
 
