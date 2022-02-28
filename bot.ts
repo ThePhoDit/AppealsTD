@@ -341,19 +341,19 @@ export async function sendAppealEmbed(user: any, _appeal: any) {
     let voteYesButton = new MessageButton()
         .setStyle("SUCCESS")
         .setLabel("Desbanear")
-        .setEmoji("771838935730094090")
+        .setEmoji("947793548781166622")
         .setCustomId(`btn-yes-${appeal.AppealID}`)
 
     let voteNoButton = new MessageButton()
         .setStyle("DANGER")
         .setLabel("Banear")
-        .setEmoji("771838918084657164")
+        .setEmoji("947793548454002689")
         .setCustomId(`btn-no-${appeal.AppealID}`)
 
     let endButton = new MessageButton()
         .setStyle("PRIMARY")
         .setLabel("Terminar votación")
-        .setEmoji("876195233271005184")
+        .setEmoji(":hourglass:")
         .setCustomId(`btn-end-${appeal.AppealID}`)
     try {
         //@ts-ignore
@@ -558,7 +558,7 @@ function unbanUser(interaction: ButtonInteraction) {
         let _endButton = new MessageButton()
             .setStyle("PRIMARY")
             .setLabel("Terminar votación")
-            .setEmoji("876195233271005184")
+            .setEmoji(":hourglass: ")
             .setDisabled(true)
             .setCustomId(`btn-end-${res.AppealID}`)
 
@@ -608,21 +608,21 @@ function banUser(interaction: ButtonInteraction) {
         let _voteYesButton = new MessageButton()
             .setStyle("SUCCESS")
             .setLabel("Desbanear")
-            .setEmoji("771838935730094090")
+            .setEmoji("947793548781166622")
             .setDisabled(true)
             .setCustomId(`btn-yes-${res.AppealID}`)
 
         let _voteNoButton = new MessageButton()
             .setStyle("DANGER")
             .setLabel("Banear")
-            .setEmoji("771838918084657164")
+            .setEmoji("947793548454002689")
             .setDisabled(true)
             .setCustomId(`btn-no-${res.AppealID}`)
 
         let _endButton = new MessageButton()
             .setStyle("PRIMARY")
             .setLabel("Terminar votación")
-            .setEmoji("876195233271005184")
+            .setEmoji(":hourglass: ")
             .setDisabled(true)
             .setCustomId(`btn-end-${res.AppealID}`)
 
