@@ -15,7 +15,7 @@ export default `
         <div class="text-center">
             <h1 id="msg" style="color: #f04747;">
                 Al parecer tu cuenta de Discord no está baneada en el servidor de TutoDiscord<br>
-                Prueba a iniciar sesión con otra cuenta.
+                Prueba a iniciar sesión con otra cuenta o a entrar en el servidor pulsando <a href="https://discord.gg/9jPjxMB" class="invite">aquí</a>.
             </h1>
             <a href="/" class="text-white">Regresar al inicio</a>
         </div>
@@ -39,6 +39,20 @@ h2, p {
 a {
     color: hsl(197,100%,47.8%);
 }
+
+a.invite:link {
+	color: #ffed5d
+}
+
+a.invite:link {
+	color: #ffed5d
+}
+
+a.invite:hover {
+	color: #F0D921;
+	text-decoration: underline; 
+}
+
 label {
     color: #8e9297;
 }

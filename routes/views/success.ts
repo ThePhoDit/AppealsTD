@@ -15,7 +15,8 @@ export default `
     <body class="d-flex h-100 justify-content-center align-items-center">
         <h1 id="msg" style="color: #43b581;" class="text-center">
             ¡Tu apelación de ban ha sido enviada!<br>
-            Sé paciente, los moderadores la revisarán pronto.
+            Sé paciente, los moderadores la revisarán pronto.<br>
+            Comprueba esta página en un plazo máximo de una semana para saber si has sido desbaneado.
         </h1>
     </body>
 <style>
