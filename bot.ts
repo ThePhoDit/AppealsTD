@@ -346,7 +346,7 @@ export async function sendAppealEmbed(user: any, _appeal: any) {
     let endButton = new MessageButton()
         .setStyle("PRIMARY")
         .setLabel("Terminar votación")
-        .setEmoji("⌛ ")
+        .setEmoji("⌛")
         .setCustomId(`btn-end-${appeal.AppealID}`)
     try {
         //@ts-ignore
@@ -551,7 +551,7 @@ function unbanUser(interaction: ButtonInteraction) {
         let _endButton = new MessageButton()
             .setStyle("PRIMARY")
             .setLabel("Terminar votación")
-            .setEmoji("⌛ ")
+            .setEmoji("⌛")
             .setDisabled(true)
             .setCustomId(`btn-end-${res.AppealID}`)
 
@@ -615,7 +615,7 @@ function banUser(interaction: ButtonInteraction) {
         let _endButton = new MessageButton()
             .setStyle("PRIMARY")
             .setLabel("Terminar votación")
-            .setEmoji("⌛ ")
+            .setEmoji("⌛")
             .setDisabled(true)
             .setCustomId(`btn-end-${res.AppealID}`)
 
