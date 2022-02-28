@@ -14,7 +14,7 @@ export default `
     <body class="d-flex h-100 justify-content-center align-items-center">
         <div class="text-center">
             <h1 id="msg" style="color: #f04747;">
-                Al parecer tu cuenta de Discord no está baneada en el servidor de TutoDiscord<br>
+                Al parecer tu cuenta de Discord no está baneada en el servidor de TutoDiscord.<br>
                 Prueba a iniciar sesión con otra cuenta o a entrar en el servidor pulsando <a href="https://discord.gg/9jPjxMB" class="invite">aquí</a>.
             </h1>
             <a href="/" class="text-white">Regresar al inicio</a>

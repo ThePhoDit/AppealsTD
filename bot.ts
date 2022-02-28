@@ -318,25 +318,18 @@ export async function sendAppealEmbed(user: any, _appeal: any) {
 
     let appeal = await _appeal
     if (!appeal) return false;
-
-    let mod = reason.split(" Baneado por: ")[1]
-    if (!mod) {
-        mod = "Sin moderador"
-    } else {
-        reason = reason.split(" Baneado por: ")[0] || "Sin razón"
-    }
     let progress = "<:Grey2:947792446371299349>".repeat(10)
 
     let embed = new MessageEmbed()
         .setColor("#2cfff7")
         .setAuthor("¡ Nueva apelación recibida !", "https://i.phodit.xyz/oKA7KWDv6")
         .setThumbnail(`https://cdn.discordapp.com/avatars/${user.ID}/${user.Avatar}.webp`)
-        .addField("Información del usuario:", `- Usuario: <@!${user.ID}>\n- Nombre: \`${user.Tag}\`\n- ID: \`${user.ID}\`\n\n- ID del caso: \`${appeal.AppealID}\`\n- Razón del baneo: \`${reason}\`\n- Moderador: \`${mod}\``, false)
+        .addField("Información del usuario:", `- Usuario: <@!${user.ID}>\n- Nombre: \`${user.Tag}\`\n- ID: \`${user.ID}\`\n\n- ID del caso: \`${appeal.AppealID}\`\n- Razón del baneo: \`${reason}\``, false)
         .addField("¿Por qué has sido baneado?", appeal.banReason, false)
         .addField("¿Por qué crees que deberíamos levantarte el ban?", appeal.appealText, false)
         .addField("¿Qué harás para evitar ser baneado en el futuro?", appeal.futureActions, false)
 
-        .setDescription(`Progreso de la votación:\n\n \`[0/0]\`<:Grey1:947792446622945310>${progress}<:Grey3:947792446585200650> \`[0/0]\`\n`)
+        .setDescription(`Progreso de la votación:\n\n \`[0/0]\` <:Grey1:947792446622945310>${progress}<:Grey3:947792446585200650> \`[0/0]\`\n`)
 
     let voteYesButton = new MessageButton()
         .setStyle("SUCCESS")
